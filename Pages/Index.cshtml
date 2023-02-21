@@ -1,0 +1,39 @@
+﻿@page
+    <div class="container">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-2">Usuario</div>
+            <div class="col-4"><input type="text" id="userInput" /></div>
+        </div>
+        <div class="row">
+            <div class="col-2">Mensaje</div>
+            <div class="col-4"><input type="text" id="messageInput" /></div>
+        </div>
+        <div class="row">
+            <div class="col-2">Alerta</div>
+            <div class="col-4"><input type="text" id="alertaInput" /><input type="button" id="alertaInputButton" value="Enviar Alerta" />  </div>
+            
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-6">
+                <input type="button" id="sendButton" value="Enviar Mensaje" />
+                <input type="button" id="deleteFirstButton" value="Eliminar Primer Mensaje" />
+                <input type="button" id="deleteLastButton" value="Eliminar Último Mensaje" />
+                <input type="button" id="deleteAllButton" value="Vaciar Mensajes" />
+                <input type="button" id="mensajeAlertaButton" value="Aviso Mantenimiento" />                    
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
